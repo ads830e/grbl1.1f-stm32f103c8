@@ -356,13 +356,13 @@ void Stepper_Driver_Interrupt(void)   //TIM3中断:The Stepper Driver Interrupt
       // Initialize new step segment and load number of steps to execute
       st.exec_segment = &segment_buffer[segment_buffer_tail];
       #ifdef ADAPTIVE_MULTI_AXIS_STEP_SMOOTHING
-        HW_TIM_DriverInterrupt_ValueConfig(1,st.exec_segment->cycles_per_tick);
+        HW_TIM_DriverInterrupt_ValueConfig(1,(st.exec_segment->cycles_per_tick)>>1);
         //使能AMASS算法就使用固定值分频【分频值需要调整】
       #else
         // With AMASS is disabled, set timer prescaler for segments with slow step frequencies (< 250Hz).
-        if(st.exec_segment->prescaler<=1) HW_TIM_DriverInterrupt_ValueConfig(5,st.exec_segment->cycles_per_tick/2);
-        else if(st.exec_segment->prescaler==2) HW_TIM_DriverInterrupt_ValueConfig(20,st.exec_segment->cycles_per_tick);
-        else HW_TIM_DriverInterrupt_ValueConfig(160,st.exec_segment->cycles_per_tick);
+        if(st.exec_segment->prescaler<=1) HW_TIM_DriverInterrupt_ValueConfig(1,st.exec_segment->cycles_per_tick);
+        else if(st.exec_segment->prescaler==2) HW_TIM_DriverInterrupt_ValueConfig(8,st.exec_segment->cycles_per_tick);
+        else HW_TIM_DriverInterrupt_ValueConfig(64,st.exec_segment->cycles_per_tick);
         
         //不使能AMASS算法就使用硬件分支产生分频
       #endif
