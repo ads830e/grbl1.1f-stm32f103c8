@@ -311,10 +311,11 @@
         </option>
         <option>
           <name>CCIncludePath2</name>
-          <state>$PROJ_DIR$\GRBL</state>
-          <state>$PROJ_DIR$\HARDWARE</state>
-          <state>$PROJ_DIR$\STM32F10x</state>
-          <state>$PROJ_DIR$\USB</state>
+          <state>$PROJ_DIR$\SRC\GRBL</state>
+          <state>$PROJ_DIR$\SRC\HARDWARE</state>
+          <state>$PROJ_DIR$\SRC\INT</state>
+          <state>$PROJ_DIR$\SRC\STM32F10x</state>
+          <state>$PROJ_DIR$\SRC\USB</state>
         </option>
         <option>
           <name>CCStdIncCheck</name>
@@ -1932,346 +1933,352 @@
   <group>
     <name>grbl</name>
     <file>
-      <name>$PROJ_DIR$\GRBL\config.h</name>
+      <name>$PROJ_DIR$\SRC\GRBL\config.h</name>
     </file>
     <file>
-      <name>$PROJ_DIR$\GRBL\coolant_control.c</name>
+      <name>$PROJ_DIR$\SRC\GRBL\coolant_control.c</name>
     </file>
     <file>
-      <name>$PROJ_DIR$\GRBL\coolant_control.h</name>
+      <name>$PROJ_DIR$\SRC\GRBL\coolant_control.h</name>
     </file>
     <file>
-      <name>$PROJ_DIR$\GRBL\cpu_map.h</name>
+      <name>$PROJ_DIR$\SRC\GRBL\cpu_map.h</name>
     </file>
     <file>
-      <name>$PROJ_DIR$\GRBL\defaults.h</name>
+      <name>$PROJ_DIR$\SRC\GRBL\defaults.h</name>
     </file>
     <file>
-      <name>$PROJ_DIR$\GRBL\eeprom.c</name>
+      <name>$PROJ_DIR$\SRC\GRBL\eeprom.c</name>
     </file>
     <file>
-      <name>$PROJ_DIR$\GRBL\eeprom.h</name>
+      <name>$PROJ_DIR$\SRC\GRBL\eeprom.h</name>
     </file>
     <file>
-      <name>$PROJ_DIR$\GRBL\gcode.c</name>
+      <name>$PROJ_DIR$\SRC\GRBL\gcode.c</name>
     </file>
     <file>
-      <name>$PROJ_DIR$\GRBL\gcode.h</name>
+      <name>$PROJ_DIR$\SRC\GRBL\gcode.h</name>
     </file>
     <file>
-      <name>$PROJ_DIR$\GRBL\grbl.h</name>
+      <name>$PROJ_DIR$\SRC\GRBL\grbl.h</name>
     </file>
     <file>
-      <name>$PROJ_DIR$\GRBL\jog.c</name>
+      <name>$PROJ_DIR$\SRC\GRBL\jog.c</name>
     </file>
     <file>
-      <name>$PROJ_DIR$\GRBL\jog.h</name>
+      <name>$PROJ_DIR$\SRC\GRBL\jog.h</name>
     </file>
     <file>
-      <name>$PROJ_DIR$\GRBL\limits.c</name>
+      <name>$PROJ_DIR$\SRC\GRBL\limits.c</name>
     </file>
     <file>
-      <name>$PROJ_DIR$\GRBL\limits.h</name>
+      <name>$PROJ_DIR$\SRC\GRBL\limits.h</name>
     </file>
     <file>
-      <name>$PROJ_DIR$\GRBL\main.c</name>
+      <name>$PROJ_DIR$\SRC\GRBL\main.c</name>
     </file>
     <file>
-      <name>$PROJ_DIR$\GRBL\motion_control.c</name>
+      <name>$PROJ_DIR$\SRC\GRBL\motion_control.c</name>
     </file>
     <file>
-      <name>$PROJ_DIR$\GRBL\motion_control.h</name>
+      <name>$PROJ_DIR$\SRC\GRBL\motion_control.h</name>
     </file>
     <file>
-      <name>$PROJ_DIR$\GRBL\nuts_bolts.c</name>
+      <name>$PROJ_DIR$\SRC\GRBL\nuts_bolts.c</name>
     </file>
     <file>
-      <name>$PROJ_DIR$\GRBL\nuts_bolts.h</name>
+      <name>$PROJ_DIR$\SRC\GRBL\nuts_bolts.h</name>
     </file>
     <file>
-      <name>$PROJ_DIR$\GRBL\planner.c</name>
+      <name>$PROJ_DIR$\SRC\GRBL\planner.c</name>
     </file>
     <file>
-      <name>$PROJ_DIR$\GRBL\planner.h</name>
+      <name>$PROJ_DIR$\SRC\GRBL\planner.h</name>
     </file>
     <file>
-      <name>$PROJ_DIR$\GRBL\print.c</name>
+      <name>$PROJ_DIR$\SRC\GRBL\print.c</name>
     </file>
     <file>
-      <name>$PROJ_DIR$\GRBL\print.h</name>
+      <name>$PROJ_DIR$\SRC\GRBL\print.h</name>
     </file>
     <file>
-      <name>$PROJ_DIR$\GRBL\probe.c</name>
+      <name>$PROJ_DIR$\SRC\GRBL\probe.c</name>
     </file>
     <file>
-      <name>$PROJ_DIR$\GRBL\probe.h</name>
+      <name>$PROJ_DIR$\SRC\GRBL\probe.h</name>
     </file>
     <file>
-      <name>$PROJ_DIR$\GRBL\protocol.c</name>
+      <name>$PROJ_DIR$\SRC\GRBL\protocol.c</name>
     </file>
     <file>
-      <name>$PROJ_DIR$\GRBL\protocol.h</name>
+      <name>$PROJ_DIR$\SRC\GRBL\protocol.h</name>
     </file>
     <file>
-      <name>$PROJ_DIR$\GRBL\report.c</name>
+      <name>$PROJ_DIR$\SRC\GRBL\report.c</name>
     </file>
     <file>
-      <name>$PROJ_DIR$\GRBL\report.h</name>
+      <name>$PROJ_DIR$\SRC\GRBL\report.h</name>
     </file>
     <file>
-      <name>$PROJ_DIR$\GRBL\serial.c</name>
+      <name>$PROJ_DIR$\SRC\GRBL\serial.c</name>
     </file>
     <file>
-      <name>$PROJ_DIR$\GRBL\serial.h</name>
+      <name>$PROJ_DIR$\SRC\GRBL\serial.h</name>
     </file>
     <file>
-      <name>$PROJ_DIR$\GRBL\settings.c</name>
+      <name>$PROJ_DIR$\SRC\GRBL\settings.c</name>
     </file>
     <file>
-      <name>$PROJ_DIR$\GRBL\settings.h</name>
+      <name>$PROJ_DIR$\SRC\GRBL\settings.h</name>
     </file>
     <file>
-      <name>$PROJ_DIR$\GRBL\spindle_control.c</name>
+      <name>$PROJ_DIR$\SRC\GRBL\spindle_control.c</name>
     </file>
     <file>
-      <name>$PROJ_DIR$\GRBL\spindle_control.h</name>
+      <name>$PROJ_DIR$\SRC\GRBL\spindle_control.h</name>
     </file>
     <file>
-      <name>$PROJ_DIR$\GRBL\stepper.c</name>
+      <name>$PROJ_DIR$\SRC\GRBL\stepper.c</name>
     </file>
     <file>
-      <name>$PROJ_DIR$\GRBL\stepper.h</name>
+      <name>$PROJ_DIR$\SRC\GRBL\stepper.h</name>
     </file>
     <file>
-      <name>$PROJ_DIR$\GRBL\system.c</name>
+      <name>$PROJ_DIR$\SRC\GRBL\system.c</name>
     </file>
     <file>
-      <name>$PROJ_DIR$\GRBL\system.h</name>
+      <name>$PROJ_DIR$\SRC\GRBL\system.h</name>
     </file>
   </group>
   <group>
     <name>hardware</name>
     <file>
-      <name>$PROJ_DIR$\HARDWARE\Hardware.c</name>
+      <name>$PROJ_DIR$\SRC\HARDWARE\Hardware.c</name>
     </file>
     <file>
-      <name>$PROJ_DIR$\HARDWARE\Hardware.h</name>
+      <name>$PROJ_DIR$\SRC\HARDWARE\Hardware.h</name>
     </file>
     <file>
-      <name>$PROJ_DIR$\HARDWARE\HW_Delay.c</name>
+      <name>$PROJ_DIR$\SRC\HARDWARE\HW_Delay.c</name>
     </file>
     <file>
-      <name>$PROJ_DIR$\HARDWARE\HW_Delay.h</name>
+      <name>$PROJ_DIR$\SRC\HARDWARE\HW_Delay.h</name>
     </file>
     <file>
-      <name>$PROJ_DIR$\HARDWARE\HW_EEPROM.c</name>
+      <name>$PROJ_DIR$\SRC\HARDWARE\HW_EEPROM.c</name>
     </file>
     <file>
-      <name>$PROJ_DIR$\HARDWARE\HW_EEPROM.h</name>
+      <name>$PROJ_DIR$\SRC\HARDWARE\HW_EEPROM.h</name>
     </file>
     <file>
-      <name>$PROJ_DIR$\HARDWARE\HW_EXTI.c</name>
+      <name>$PROJ_DIR$\SRC\HARDWARE\HW_EXTI.c</name>
     </file>
     <file>
-      <name>$PROJ_DIR$\HARDWARE\HW_EXTI.h</name>
+      <name>$PROJ_DIR$\SRC\HARDWARE\HW_EXTI.h</name>
     </file>
     <file>
-      <name>$PROJ_DIR$\HARDWARE\HW_GPIO.c</name>
+      <name>$PROJ_DIR$\SRC\HARDWARE\HW_GPIO.c</name>
     </file>
     <file>
-      <name>$PROJ_DIR$\HARDWARE\HW_GPIO.h</name>
+      <name>$PROJ_DIR$\SRC\HARDWARE\HW_GPIO.h</name>
     </file>
     <file>
-      <name>$PROJ_DIR$\HARDWARE\HW_INT.h</name>
+      <name>$PROJ_DIR$\SRC\HARDWARE\HW_INT.h</name>
     </file>
     <file>
-      <name>$PROJ_DIR$\HARDWARE\HW_PWM.c</name>
+      <name>$PROJ_DIR$\SRC\HARDWARE\HW_PWM.c</name>
     </file>
     <file>
-      <name>$PROJ_DIR$\HARDWARE\HW_PWM.h</name>
+      <name>$PROJ_DIR$\SRC\HARDWARE\HW_PWM.h</name>
     </file>
     <file>
-      <name>$PROJ_DIR$\HARDWARE\HW_TIM.c</name>
+      <name>$PROJ_DIR$\SRC\HARDWARE\HW_TIM.c</name>
     </file>
     <file>
-      <name>$PROJ_DIR$\HARDWARE\HW_TIM.h</name>
+      <name>$PROJ_DIR$\SRC\HARDWARE\HW_TIM.h</name>
     </file>
     <file>
-      <name>$PROJ_DIR$\HARDWARE\HW_USBUART.c</name>
+      <name>$PROJ_DIR$\SRC\HARDWARE\HW_USBUART.c</name>
     </file>
     <file>
-      <name>$PROJ_DIR$\HARDWARE\HW_USBUART.h</name>
+      <name>$PROJ_DIR$\SRC\HARDWARE\HW_USBUART.h</name>
     </file>
     <file>
-      <name>$PROJ_DIR$\HARDWARE\stepper_four-phase.c</name>
+      <name>$PROJ_DIR$\SRC\HARDWARE\stepper_four-phase.c</name>
     </file>
     <file>
-      <name>$PROJ_DIR$\HARDWARE\stepper_four-phase.h</name>
+      <name>$PROJ_DIR$\SRC\HARDWARE\stepper_four-phase.h</name>
+    </file>
+  </group>
+  <group>
+    <name>int</name>
+    <file>
+      <name>$PROJ_DIR$\SRC\INT\stm32f10x_it.c</name>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\SRC\INT\stm32f10x_it.h</name>
+    </file>
+  </group>
+  <group>
+    <name>startup</name>
+    <file>
+      <name>$PROJ_DIR$\SRC\STARTUP\iar\startup_stm32f10x_md.s</name>
     </file>
   </group>
   <group>
     <name>stm32f10x</name>
     <file>
-      <name>$PROJ_DIR$\STM32F10x\core_cm3.c</name>
+      <name>$PROJ_DIR$\SRC\STM32F10x\core_cm3.c</name>
     </file>
     <file>
-      <name>$PROJ_DIR$\STM32F10x\core_cm3.h</name>
+      <name>$PROJ_DIR$\SRC\STM32F10x\core_cm3.h</name>
     </file>
     <file>
-      <name>$PROJ_DIR$\STM32F10x\misc.c</name>
+      <name>$PROJ_DIR$\SRC\STM32F10x\misc.c</name>
     </file>
     <file>
-      <name>$PROJ_DIR$\STM32F10x\misc.h</name>
+      <name>$PROJ_DIR$\SRC\STM32F10x\misc.h</name>
     </file>
     <file>
-      <name>$PROJ_DIR$\STM32F10x\startup_stm32f10x_md.s</name>
+      <name>$PROJ_DIR$\SRC\STM32F10x\stm32f10x.h</name>
     </file>
     <file>
-      <name>$PROJ_DIR$\STM32F10x\stm32f10x.h</name>
+      <name>$PROJ_DIR$\SRC\STM32F10x\stm32f10x_conf.h</name>
     </file>
     <file>
-      <name>$PROJ_DIR$\STM32F10x\stm32f10x_conf.h</name>
+      <name>$PROJ_DIR$\SRC\STM32F10x\stm32f10x_dma.c</name>
     </file>
     <file>
-      <name>$PROJ_DIR$\STM32F10x\stm32f10x_dma.c</name>
+      <name>$PROJ_DIR$\SRC\STM32F10x\stm32f10x_dma.h</name>
     </file>
     <file>
-      <name>$PROJ_DIR$\STM32F10x\stm32f10x_dma.h</name>
+      <name>$PROJ_DIR$\SRC\STM32F10x\stm32f10x_exti.c</name>
     </file>
     <file>
-      <name>$PROJ_DIR$\STM32F10x\stm32f10x_exti.c</name>
+      <name>$PROJ_DIR$\SRC\STM32F10x\stm32f10x_exti.h</name>
     </file>
     <file>
-      <name>$PROJ_DIR$\STM32F10x\stm32f10x_exti.h</name>
+      <name>$PROJ_DIR$\SRC\STM32F10x\stm32f10x_flash.c</name>
     </file>
     <file>
-      <name>$PROJ_DIR$\STM32F10x\stm32f10x_flash.c</name>
+      <name>$PROJ_DIR$\SRC\STM32F10x\stm32f10x_flash.h</name>
     </file>
     <file>
-      <name>$PROJ_DIR$\STM32F10x\stm32f10x_flash.h</name>
+      <name>$PROJ_DIR$\SRC\STM32F10x\stm32f10x_gpio.c</name>
     </file>
     <file>
-      <name>$PROJ_DIR$\STM32F10x\stm32f10x_gpio.c</name>
+      <name>$PROJ_DIR$\SRC\STM32F10x\stm32f10x_gpio.h</name>
     </file>
     <file>
-      <name>$PROJ_DIR$\STM32F10x\stm32f10x_gpio.h</name>
+      <name>$PROJ_DIR$\SRC\STM32F10x\stm32f10x_pwr.c</name>
     </file>
     <file>
-      <name>$PROJ_DIR$\STM32F10x\stm32f10x_pwr.c</name>
+      <name>$PROJ_DIR$\SRC\STM32F10x\stm32f10x_pwr.h</name>
     </file>
     <file>
-      <name>$PROJ_DIR$\STM32F10x\stm32f10x_pwr.h</name>
+      <name>$PROJ_DIR$\SRC\STM32F10x\stm32f10x_rcc.c</name>
     </file>
     <file>
-      <name>$PROJ_DIR$\STM32F10x\stm32f10x_rcc.c</name>
+      <name>$PROJ_DIR$\SRC\STM32F10x\stm32f10x_rcc.h</name>
     </file>
     <file>
-      <name>$PROJ_DIR$\STM32F10x\stm32f10x_rcc.h</name>
+      <name>$PROJ_DIR$\SRC\STM32F10x\stm32f10x_tim.c</name>
     </file>
     <file>
-      <name>$PROJ_DIR$\STM32F10x\stm32f10x_tim.c</name>
+      <name>$PROJ_DIR$\SRC\STM32F10x\stm32f10x_tim.h</name>
     </file>
     <file>
-      <name>$PROJ_DIR$\STM32F10x\stm32f10x_tim.h</name>
-    </file>
-    <file>
-      <name>$PROJ_DIR$\STM32F10x\system_stm32f10x.h</name>
+      <name>$PROJ_DIR$\SRC\STM32F10x\system_stm32f10x.h</name>
     </file>
   </group>
   <group>
     <name>usb</name>
     <file>
-      <name>$PROJ_DIR$\USB\hw_config.c</name>
+      <name>$PROJ_DIR$\SRC\USB\hw_config.c</name>
     </file>
     <file>
-      <name>$PROJ_DIR$\USB\hw_config.h</name>
+      <name>$PROJ_DIR$\SRC\USB\hw_config.h</name>
     </file>
     <file>
-      <name>$PROJ_DIR$\USB\platform_config.h</name>
+      <name>$PROJ_DIR$\SRC\USB\platform_config.h</name>
     </file>
     <file>
-      <name>$PROJ_DIR$\USB\stm32f10x_it.c</name>
+      <name>$PROJ_DIR$\SRC\USB\system_stm32f10x.c</name>
     </file>
     <file>
-      <name>$PROJ_DIR$\USB\stm32f10x_it.h</name>
+      <name>$PROJ_DIR$\SRC\USB\usb_conf.h</name>
     </file>
     <file>
-      <name>$PROJ_DIR$\USB\system_stm32f10x.c</name>
+      <name>$PROJ_DIR$\SRC\USB\usb_core.c</name>
     </file>
     <file>
-      <name>$PROJ_DIR$\USB\usb_conf.h</name>
+      <name>$PROJ_DIR$\SRC\USB\usb_core.h</name>
     </file>
     <file>
-      <name>$PROJ_DIR$\USB\usb_core.c</name>
+      <name>$PROJ_DIR$\SRC\USB\usb_def.h</name>
     </file>
     <file>
-      <name>$PROJ_DIR$\USB\usb_core.h</name>
+      <name>$PROJ_DIR$\SRC\USB\usb_desc.c</name>
     </file>
     <file>
-      <name>$PROJ_DIR$\USB\usb_def.h</name>
+      <name>$PROJ_DIR$\SRC\USB\usb_desc.h</name>
     </file>
     <file>
-      <name>$PROJ_DIR$\USB\usb_desc.c</name>
+      <name>$PROJ_DIR$\SRC\USB\usb_endp.c</name>
     </file>
     <file>
-      <name>$PROJ_DIR$\USB\usb_desc.h</name>
+      <name>$PROJ_DIR$\SRC\USB\usb_init.c</name>
     </file>
     <file>
-      <name>$PROJ_DIR$\USB\usb_endp.c</name>
+      <name>$PROJ_DIR$\SRC\USB\usb_init.h</name>
     </file>
     <file>
-      <name>$PROJ_DIR$\USB\usb_init.c</name>
+      <name>$PROJ_DIR$\SRC\USB\usb_int.c</name>
     </file>
     <file>
-      <name>$PROJ_DIR$\USB\usb_init.h</name>
+      <name>$PROJ_DIR$\SRC\USB\usb_int.h</name>
     </file>
     <file>
-      <name>$PROJ_DIR$\USB\usb_int.c</name>
+      <name>$PROJ_DIR$\SRC\USB\usb_istr.c</name>
     </file>
     <file>
-      <name>$PROJ_DIR$\USB\usb_int.h</name>
+      <name>$PROJ_DIR$\SRC\USB\usb_istr.h</name>
     </file>
     <file>
-      <name>$PROJ_DIR$\USB\usb_istr.c</name>
+      <name>$PROJ_DIR$\SRC\USB\usb_lib.h</name>
     </file>
     <file>
-      <name>$PROJ_DIR$\USB\usb_istr.h</name>
+      <name>$PROJ_DIR$\SRC\USB\usb_mem.c</name>
     </file>
     <file>
-      <name>$PROJ_DIR$\USB\usb_lib.h</name>
+      <name>$PROJ_DIR$\SRC\USB\usb_mem.h</name>
     </file>
     <file>
-      <name>$PROJ_DIR$\USB\usb_mem.c</name>
+      <name>$PROJ_DIR$\SRC\USB\usb_prop.c</name>
     </file>
     <file>
-      <name>$PROJ_DIR$\USB\usb_mem.h</name>
+      <name>$PROJ_DIR$\SRC\USB\usb_prop.h</name>
     </file>
     <file>
-      <name>$PROJ_DIR$\USB\usb_prop.c</name>
+      <name>$PROJ_DIR$\SRC\USB\usb_pwr.c</name>
     </file>
     <file>
-      <name>$PROJ_DIR$\USB\usb_prop.h</name>
+      <name>$PROJ_DIR$\SRC\USB\usb_pwr.h</name>
     </file>
     <file>
-      <name>$PROJ_DIR$\USB\usb_pwr.c</name>
+      <name>$PROJ_DIR$\SRC\USB\usb_regs.c</name>
     </file>
     <file>
-      <name>$PROJ_DIR$\USB\usb_pwr.h</name>
+      <name>$PROJ_DIR$\SRC\USB\usb_regs.h</name>
     </file>
     <file>
-      <name>$PROJ_DIR$\USB\usb_regs.c</name>
+      <name>$PROJ_DIR$\SRC\USB\usb_sil.c</name>
     </file>
     <file>
-      <name>$PROJ_DIR$\USB\usb_regs.h</name>
+      <name>$PROJ_DIR$\SRC\USB\usb_sil.h</name>
     </file>
     <file>
-      <name>$PROJ_DIR$\USB\usb_sil.c</name>
-    </file>
-    <file>
-      <name>$PROJ_DIR$\USB\usb_sil.h</name>
-    </file>
-    <file>
-      <name>$PROJ_DIR$\USB\usb_type.h</name>
+      <name>$PROJ_DIR$\SRC\USB\usb_type.h</name>
     </file>
   </group>
 </project>
