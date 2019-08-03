@@ -52,7 +52,7 @@ void USB_Interrupts_Config(void);
 void Handle_USBAsynchXfer (void);
 void Get_SerialNum(void);
 
-void USB_To_Buffer(uint8_t* data_buffer, uint8_t Nb_bytes);
+void USB_To_Buffer(uint8_t* data_buffer, uint16_t Nb_bytes);
 uint8_t USB_Read_RBuffer(void);
 void USB_Send_Data(uint8_t data);
 uint16_t USB_RBuffer_Count(void);

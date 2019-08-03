@@ -209,9 +209,9 @@ void USB_Interrupts_Config(void)
                    Nb_bytes: number of bytes to send.
 * Return         : none.
 *******************************************************************************/
-void USB_To_Buffer(uint8_t* data_buffer, uint8_t Nb_bytes)
+void USB_To_Buffer(uint8_t* data_buffer, uint16_t Nb_bytes)
 {
-  uint8_t i;
+  uint16_t i;
   for (i = 0; i < Nb_bytes; i++){
     USB_RBuffer[USB_RBuffer_Current++] = *(data_buffer + i);
     /* To avoid buffer overflow */
